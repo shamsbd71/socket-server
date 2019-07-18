@@ -13,10 +13,10 @@ return [
      */
     'apps' => [
         [
-            'id' => env('PUSHER_APP_ID'),
-            'name' => env('APP_NAME'),
-            'key' => env('PUSHER_APP_KEY'),
-            'secret' => env('PUSHER_APP_SECRET'),
+            'id' => '3243',
+            'name' => 'GetAdvised',
+            'key' => 'qrgqrvvqewreqrvwqev',
+            'secret' => 'qwergbvbegqvwqebqerwgvbvqwerggqw',
             'enable_client_messages' => false,
             'enable_statistics' => true,
         ],
@@ -47,7 +47,7 @@ return [
     /*
      * This path will be used to register the necessary routes for the package.
      */
-    'path' => 'laravel-websockets',
+    'path' => 'websocket',
 
     /*
      * Dashboard Routes Middleware

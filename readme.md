@@ -58,3 +58,23 @@ server {
   }
 }
 ```
+
+
+### Pusher-JS
+https://github.com/pusher/pusher-js#web
+===
+```JS
+script = document.createElement('script');
+script.src = 'https://js.pusher.com/7.0/pusher.min.js';
+script.type = 'text/javascript';
+document.head.append(script);
+
+pusher = new Pusher('weqfwqefqfqvqvvfq', {wsHost: 'localhost', wsPort: 6001, encrypted: false, enableTransports: ['ws'], forceTLS: false});
+channel = pusher.subscribe('hello');
+channel.bind('world', data => console.log(data))
+channel.trigger('client-world',  {hello:'world'});
+```
+
+### reading
+https://tsh.io/blog/php-websocket/
+https://github.com/GeniusesOfSymfony/WebsocketAppDemo
